@@ -938,22 +938,22 @@ if (!(Test-Path $LogFile)){
             }
             "WMI" {
                 "Tattooing: $($Tatoo.Name) with value: $($Tatoo.value) --> in WMI." >> $LogFile
-                New-OSDTattoo -Root $Root -Name $($Tatoo.Name) -Value $($Tatoo.value) -wmi
+                New-OSDTattoo -Root $Root -PropertyName $($Tatoo.Name) -PropertyValue $($Tatoo.value) -wmi
                 break
             }
             "Registry"{
                 "Tattooing: $($Tatoo.Name) with value: $($Tatoo.value) --> in Registry." >> $LogFile
-                New-OSDTattoo -Root $Root -Name $($Tatoo.Name) -Value $($Tatoo.value) -Registry
+                New-OSDTattoo -Root $Root -PropertyName $($Tatoo.Name) -PropertyValue $($Tatoo.value) -Registry
                 Break
             }
             "EnvironmentVariable"{
                 "Tattooing: $($Tatoo.Name) with value: $($Tatoo.value) --> in environment variables." >> $LogFile
-                New-OSDTattoo -Root $Root -Name $($Tatoo.Name) -Value $($Tatoo.value) -EnvironmentVariable
+                New-OSDTattoo -Root $Root -PropertyName $($Tatoo.Name) -PropertyValue $($Tatoo.value) -EnvironmentVariable
                 break
             }
             default{
                 "Tattooing: $($Tatoo.Name) with value: $($Tatoo.value) --> in WMI, Registry and environment variables.">> $LogFile
-                New-OSDTattoo -Root $Root -Name $($Tatoo.Name) -Value $($Tatoo.value) -All
+                New-OSDTattoo -Root $Root -PropertyName $($Tatoo.Name) -PropertyValue $($Tatoo.value) -All
                 break
                 
             }
