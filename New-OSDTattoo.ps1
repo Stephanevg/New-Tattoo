@@ -1,8 +1,38 @@
+<#PSScriptInfo
+
+.VERSION 1.4.3
+
+.GUID d5766e62-9beb-42d3-93ed-d615c3fc0a00
+
+.AUTHOR @stephanevg
+
+.COMPANYNAME District
+
+.COPYRIGHT All rights reserved
+
+.TAGS osd tattoo sccm deployment registry wmi environmentvariable
+
+.LICENSEURI https://github.com/Stephanevg/New-Tattoo/blob/master/LICENSE
+
+.PROJECTURI https://github.com/Stephanevg/New-Tattoo
+
+.ICONURI https://github.com/Stephanevg/New-Tattoo/blob/master/Images/Logo.png
+
+.EXTERNALMODULEDEPENDENCIES
+
+.REQUIREDSCRIPTS
+
+.EXTERNALSCRIPTDEPENDENCIES
+
+.RELEASENOTES
+#>
+
 <#
 .SYNOPSIS
     [INFO] to get the latest help / version of this script use --> get-help .\New-OSDTattoo.ps1 -Online[/INFO]
 	This script will set a tatoo information into an OS image during OSD deployment.
     
+    To get detailed help, use Get-Help .\New-OSDTattoo.ps1 -Online
    
 .DESCRIPTION 
     This script will tatoo the Windows Image with specefic values into one or all of the following locations:
